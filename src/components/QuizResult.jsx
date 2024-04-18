@@ -15,7 +15,7 @@ export default function QuizResult() {
 
   const handleClick = () => {
     deleteQuizResults();
-    navigate("/");
+    navigate("/QuizEra");
   };
 
   return (

@@ -13,7 +13,7 @@ import Error from "./components/UIComponents/Error";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<HomeLayout />}>
+    <Route path="QuizEra" element={<HomeLayout />}>
       <Route index element={<Categories />} />
       <Route
         path="category-questions/:id"
