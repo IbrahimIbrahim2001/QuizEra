@@ -22,7 +22,7 @@ export default function CategoryQuestions() {
       </p>
       <button
         className="mb-3 place-self-end  self-start col-span-1 "
-        onClick={() => navigate("/QuizEra")}
+        onClick={() => navigate("/")}
       >
         <img src={exit} alt="return home" className="w-10 h-10 " />
       </button>

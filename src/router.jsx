@@ -11,17 +11,16 @@ import CategoryQuestionsLayout from "./pages/CategoryQuestionsLayout";
 import QuizResult from "./components/QuizResult";
 import Error from "./components/UIComponents/Error";
 
-export const router = createBrowserRouter(
-  { basename: "/QuizEra" },
-  createRoutesFromElements(
-    <Route path="QuizEra" element={<HomeLayout />}>
-      <Route index element={<Categories />} />
-      <Route
-        path="category-questions/:id"
-        element={<CategoryQuestionsLayout />}
-      />
-      <Route path="quiz-result" element={<QuizResult />} />
-      <Route path="*" element={<Error />} />
-    </Route>
-  )
+let routes = createRoutesFromElements(
+  <Route path="/" element={<HomeLayout />}>
+    <Route index element={<Categories />} />
+    <Route
+      path="category-questions/:id"
+      element={<CategoryQuestionsLayout />}
+    />
+    <Route path="quiz-result" element={<QuizResult />} />
+    <Route path="*" element={<Error />} />
+  </Route>
 );
+
+export const router = createBrowserRouter(routes, { basename: "/QuizEra/" });
