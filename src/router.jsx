@@ -12,6 +12,7 @@ import QuizResult from "./components/QuizResult";
 import Error from "./components/UIComponents/Error";
 
 export const router = createBrowserRouter(
+  { basename: "/QuizEra" },
   createRoutesFromElements(
     <Route path="QuizEra" element={<HomeLayout />}>
       <Route index element={<Categories />} />
